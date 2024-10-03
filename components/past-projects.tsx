@@ -40,10 +40,10 @@ export function PastProjects() {
 
   return (
     <section className="w-full bg-[#080808] px-4 md:px-16 py-12">
-      <h2 className="text-2xl md:text-[40px] font-light mb-6 text-white">
+      <h2 className="text-2xl md:text-[40px] font-semibold mb-6 text-white">
         Diann's past projects
       </h2>
-      <p className="text-gray-400 text-2xl mb-6">
+      <p className="text-gray-400 font-normal text-2xl mb-6">
         Real SystemVerilog tasks engineers gave to Diann.
       </p>
       <Slider {...settings}>

@@ -49,10 +49,10 @@ export function PurchaseDiana() {
 
   return (
     <section className="w-full bg-[#080808] px-4 md:px-16 py-12">
-      <h2 className="text-2xl md:text-[40px] font-light mb-6 text-white">
+      <h2 className="text-2xl md:text-[40px] font-semibold mb-6 text-white">
         Purchase Diann's toolbox
       </h2>
-      <p className="text-2xl text-gray-400 mb-6">
+      <p className="text-2xl text-gray-400 font-normal mb-6">
         Diann uses powerful tools to complete tasks, which you can purchase
         separately.
       </p>
