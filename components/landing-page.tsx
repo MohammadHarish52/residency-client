@@ -20,14 +20,11 @@ export function LandingPage() {
             RISC-V core."
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-[#FF00E5] hover:bg-fuchsia-600 text-black font-medium py-2 px-6 rounded-full text-lg">
+            <Button className="bg-white hover:bg-fuchsia-600 text-black font-medium py-2 px-6 rounded-full text-lg">
               Try Diann now
             </Button>
-            <Link
-              href="#"
-              className="text-gray-300 hover:text-gray-500 font-semibold text-lg flex items-center"
-            >
-              Watch demo
+            <Button className="bg-white hover:bg-fuchsia-600 text-black font-medium py-2 px-6 rounded-full text-lg">
+              Watch Demo{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 ml-2"
@@ -40,7 +37,7 @@ export function LandingPage() {
                   clipRule="evenodd"
                 />
               </svg>
-            </Link>
+            </Button>
           </div>
         </div>
       </main>

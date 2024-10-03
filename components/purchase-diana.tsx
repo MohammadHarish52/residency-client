@@ -4,8 +4,40 @@ import { Card } from "@/components/ui/card";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useRef, useEffect } from "react";
 
 export function PurchaseDiana() {
+  const sliderRef = useRef<Slider>(null);
+
+  useEffect(() => {
+    const handleWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      if (e.deltaX > 0) {
+        sliderRef.current?.slickNext();
+      } else if (e.deltaX < 0) {
+        sliderRef.current?.slickPrev();
+      }
+    };
+
+    const sliderElement = sliderRef.current?.innerSlider?.list;
+    if (sliderElement) {
+      sliderElement.addEventListener(
+        "wheel",
+        (e: Event) => handleWheel(e as WheelEvent),
+        { passive: false }
+      );
+    }
+
+    return () => {
+      if (sliderElement) {
+        sliderElement.removeEventListener(
+          "wheel",
+          handleWheel as EventListener
+        );
+      }
+    };
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -13,6 +45,8 @@ export function PurchaseDiana() {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
+    swipeToSlide: true,
+    draggable: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -56,7 +90,7 @@ export function PurchaseDiana() {
         Diann uses powerful tools to complete tasks, which you can purchase
         separately.
       </p>
-      <Slider {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {[1, 2, 3, 4, 5, 6].map((project, index) => (
           <div key={project} className="px-2">
             <Card
