@@ -42,7 +42,7 @@ export function PurchaseDiana() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3.5, // Changed from 4 to 3.5
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
@@ -90,19 +90,22 @@ export function PurchaseDiana() {
         Diann uses powerful tools to complete tasks, which you can purchase
         separately.
       </p>
-      <Slider ref={sliderRef} {...settings}>
-        {[1, 2, 3, 4, 5, 6].map((project, index) => (
-          <div key={project} className="px-2">
-            <Card
-              className={`w-full aspect-[3/4] md:w-[325px] md:h-[420px] rounded-sm flex items-center justify-center text-white ${
-                cardColors[index % cardColors.length]
-              }`}
-            >
-              <div className="text-center"></div>
-            </Card>
-          </div>
-        ))}
-      </Slider>
+      <div className="pl-0 md:pl-[62.5px] relative">
+        <Slider ref={sliderRef} {...settings}>
+          {[1, 2, 3, 4, 5, 6].map((project, index) => (
+            <div key={project} className="px-2">
+              <Card
+                className={`w-full aspect-[3/4] md:w-[325px] md:h-[420px] rounded-sm flex items-center justify-center text-white ${
+                  cardColors[index % cardColors.length]
+                }`}
+              >
+                <div className="text-center"></div>
+              </Card>
+            </div>
+          ))}
+        </Slider>
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[162.5px] bg-gradient-to-l from-[#080808] to-transparent pointer-events-none"></div>
+      </div>
     </section>
   );
 }

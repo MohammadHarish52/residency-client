@@ -13,7 +13,7 @@ export function PastProjects() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3.5, // Changed from 3.5 to 3
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
@@ -81,15 +81,17 @@ export function PastProjects() {
       <p className="text-white font-normal text-2xl mb-16">
         Real SystemVerilog tasks engineers gave to Diann.
       </p>
-      <Slider ref={sliderRef} {...settings}>
-        {[1, 2, 3, 4, 5, 6].map((project) => (
-          <div key={project} className="px-2">
-            <Card className="w-full aspect-[3/4] md:w-[325px] md:h-[420px] rounded-sm flex items-center justify-center text-white bg-gray-200">
-              <div className="text-center bg-white"></div>
-            </Card>
-          </div>
-        ))}
-      </Slider>
+      <div className="pl-0 md:pl-[62.5px] relative">
+        <Slider ref={sliderRef} {...settings}>
+          {[1, 2, 3, 4, 5, 6].map((project) => (
+            <div key={project} className="px-2">
+              <Card className="w-full aspect-[3/4] md:w-[325px] md:h-[420px] rounded-sm flex items-center justify-center text-white bg-gray-200">
+                <div className="text-center bg-white"></div>
+              </Card>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 }
