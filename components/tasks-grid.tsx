@@ -21,7 +21,7 @@ export function TasksGrid() {
           <p className="text-lg lg:text-2xl font-light mb-4">
             "Design a parameterized ALU (boilerplate)."
           </p>
-          <Button className="w-full bg-pink-500 hover:bg-fuchsia-600 text-[#080808]  py-2 px-4 rounded-full text-sm mt-4">
+          <Button className="w-full bg-[#FF00E5] hover:bg-fuchsia-600 text-[#080808]  py-2 px-4 rounded-full text-sm mt-4">
             Ask Diann something now.
           </Button>
         </div>

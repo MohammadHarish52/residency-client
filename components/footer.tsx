@@ -7,7 +7,7 @@ export function FooterComponent() {
     <footer className="bg-[#080808] py-12 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
         <div>
-          <h2 className="font-semibold mb-4 text-white">Our Research</h2>
+          <h2 className="font-semibold mb-4 text-gray-200">Our Research</h2>
           <ul className="space-y-3">
             <li>
               <Link href="#" className="text-gray-100 hover:text-gray-900">

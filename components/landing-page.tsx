@@ -11,16 +11,16 @@ export function LandingPage() {
       </header>
       <main className="flex-grow flex items-center justify-center px-4">
         <div className="w-full  text-center">
-          <h2 className="text-4xl sm:text-5xl lg:text-[96px] font-thin mb-12 text-white leading-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-[96px] font-medium mb-12 text-white leading-tight">
             The First Ai Hardware Engineer <br />
           </h2>
-          <p className="text-lg sm:text-xl mb-8 text-gray-100 max-w-2xl mx-auto">
-            Our agent achieves a score of 100% on Nvidia's VerilogEval
+          <p className="text-[20px] sm:text-xl mb-8 text-white opacity-80 max-w-2xl mx-auto">
+            Our agent achieves a score of 100% on Nvidia's <i>VerilogEval</i>{" "}
             benchmark. Ask Diann to "connect an AXI peripheral controller to my
             RISC-V core."
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-pink-500 hover:bg-fuchsia-600 text-black font-medium py-2 px-6 rounded-full text-lg">
+            <Button className="bg-[#FF00E5] hover:bg-fuchsia-600 text-black font-medium py-2 px-6 rounded-full text-lg">
               Try Diann now
             </Button>
             <Link
