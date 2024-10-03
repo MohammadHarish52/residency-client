@@ -94,7 +94,7 @@ export function PurchaseDiana() {
         {[1, 2, 3, 4, 5, 6].map((project, index) => (
           <div key={project} className="px-2">
             <Card
-              className={`w-full aspect-[3/4] flex items-center justify-center text-white ${
+              className={`w-full aspect-[3/4] md:w-[325px] md:h-[420px] rounded-sm flex items-center justify-center text-white ${
                 cardColors[index % cardColors.length]
               }`}
             >
