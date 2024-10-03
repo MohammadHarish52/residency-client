@@ -86,7 +86,7 @@ export function PurchaseDiana() {
       <h2 className="text-2xl md:text-[40px] font-semibold mb-6 text-white">
         Purchase Diann's toolbox
       </h2>
-      <p className="text-2xl text-gray-400 font-normal mb-6">
+      <p className="text-2xl text-white font-normal mb-16">
         Diann uses powerful tools to complete tasks, which you can purchase
         separately.
       </p>

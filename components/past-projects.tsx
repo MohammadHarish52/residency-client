@@ -78,7 +78,7 @@ export function PastProjects() {
       <h2 className="text-2xl md:text-[40px] font-semibold mb-6 text-white">
         Diann's past projects
       </h2>
-      <p className="text-gray-400 font-normal text-2xl mb-6">
+      <p className="text-white font-normal text-2xl mb-16">
         Real SystemVerilog tasks engineers gave to Diann.
       </p>
       <Slider ref={sliderRef} {...settings}>

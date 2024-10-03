@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function AchievementBanner() {
   return (
-    <div className="w-full bg-[#080808] h-full py-12">
+    <div className="w-full bg-[#080808] h-full pt-20 pb-36">
       <div className="max-w-full h-full px-4 md:px-16 py-12">
         <h1 className="text-4xl text-white md:text-5xl  lg:text-[96px] font-semibold mb-6 leading-tight">
           Diann achieves a score <br />
