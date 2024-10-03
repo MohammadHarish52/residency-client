@@ -91,6 +91,7 @@ export function PastProjects() {
             </div>
           ))}
         </Slider>
+        <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[162.5px] bg-gradient-to-l from-[#080808] to-transparent pointer-events-none"></div>
       </div>
     </section>
   );
