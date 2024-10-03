@@ -5,28 +5,27 @@ import { Button } from "@/components/ui/button";
 
 export function LandingPage() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
-      <header className="p-4 border-b border-gray-200">
-        <h1 className="text-xl font-semibold">Instachip</h1>
+    <div className="min-h-screen bg-[#080808] flex flex-col">
+      <header className="p-4 border-b border-[#212121]">
+        <h1 className="text-xl text-white font-semibold">Instachip</h1>
       </header>
       <main className="flex-grow flex items-center justify-center px-4">
         <div className="w-full  text-center">
-          <h2 className="text-4xl sm:text-5xl lg:text-[96px] font-thin mb-6 leading-tight">
-            An applied research lab building <br /> autonomous circuit
-            designers.
+          <h2 className="text-4xl sm:text-5xl lg:text-[96px] font-thin mb-12 text-white leading-tight">
+            The First Ai Hardware Engineer <br />
           </h2>
-          <p className="text-lg sm:text-xl mb-8 text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl mb-8 text-gray-100 max-w-2xl mx-auto">
             Our agent achieves a score of 100% on Nvidia's VerilogEval
             benchmark. Ask Diann to "connect an AXI peripheral controller to my
             RISC-V core."
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-pink-500 hover:bg-fuchsia-600 text-white font-semibold py-2 px-6 rounded-md text-lg">
+            <Button className="bg-pink-500 hover:bg-fuchsia-600 text-black font-medium py-2 px-6 rounded-full text-lg">
               Try Diann now
             </Button>
             <Link
               href="#"
-              className="text-gray-600 hover:text-gray-800 font-semibold text-lg flex items-center"
+              className="text-gray-300 hover:text-gray-500 font-semibold text-lg flex items-center"
             >
               Watch demo
               <svg
